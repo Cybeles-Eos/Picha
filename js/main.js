@@ -73,11 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       createAccessCode(); // Append the new div to the body or any other specific parent element.
       console.log('2');
    });
-   
 
-
-  
- 
 });
 
 
