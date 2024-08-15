@@ -124,7 +124,7 @@ header{
    margin: 0 auto;
    height: 9.9rem;
    position: relative;
-   background-image: url(/Pictures/book.svg);
+   background-image: url(Pictures/book.svg);
    background-position: bottom;
    background-size: cover;
    rotate: 180deg;
