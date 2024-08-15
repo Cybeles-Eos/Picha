@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/HdrFtrSBar.css">
+   <link rel="stylesheet" href="css/upload.css">
+   <title>Picha | Upload</title>
+</head>
+<body>
+   <header>
+      <div class="logo_holder">
+         <img id="logoPicha" src="Pictures/Picha-Logo.png" alt="Picha">
+
+         <p id="logo-text">
+            Make your image popular<br>
+            by sliding it in gallery's
+         </p>
+      </div>
+      
+      <button id="headerBtn">
+         Go to gallery
+         <div class="circle-right-btn">
+            <div class="c-inImages">
+               <img class="cin_img" src="Pictures/nft-line-gallery.svg" alt="">
+               <img class="cin_img" src="Pictures/rocket-2-line.svg" alt="">
+            </div>
+         </div>
+      </button>
+   </header>
+
+   <main class="uplolad-container">
+      <div class="images-container">
+         <div class="upload-image-cont">
+            <input type="file" id="fileInput" accept="image/*">
+            <img class="choseImage-holder" src="Pictures/BorderDashedImg2.png">   
+         </div>
+
+         <div class="button-upcc">
+            <button class="uploadNow">Upload now</button>
+            <button class="cancelUpload">Cancel</button>
+         </div>
+      </div>
+   </main>
+   
+   <div class="sep-cont"></div>
+   <footer>
+      <img class="foo-logo" src="Pictures/Picha-Logo.png">
+      <p class="foo-text">© 2024 Picha. All rights reserved. Unauthorized use or reproduction of content from this site is prohibited without permission.</p>
+      <button class="contact-btn">Contact</button>
+   </footer>
+
+   <script type="module" src="js/upload.js"></script>
+</body>
+</html>  

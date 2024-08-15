@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+   --Poppins: "Poppins", sans-serif;
+
+   --Ble-F: #2294FF;
+   --Red: #FF7D7D;
+   --White: #FFF;
+   --Ble-BackGround: #CDE7FF;
+
+   /*For ScrollBar*/
+   --Back-clr: #f1f1f1;
+   --SemBlue-drk: #222831;
+   --Drk-Red: #84c3ff;
+   --Drk-Text: #060D15;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: var(--Poppins);
+}
+
+body{
+   background-color: var(--Ble-BackGround);
+}
+
+/*=======================*/
+/*=|  Header Section   |=*/
+/*=======================*/
+header{
+   max-width: 1440px;
+   margin: 0 auto;
+   height: 4rem;
+   background-color: var(--Ble-BackGround);
+   padding-inline: 1rem;
+
+   display: none;
+   justify-content: space-between;
+   align-items: center;
+
+   position: relative;
+}
+.logo_holder{
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+#logoPicha{
+   width: 6rem;
+   padding-right: 1.5rem;
+   border-right: 1px solid var(--Ble-F);
+   user-select: none;
+   cursor: pointer;
+}
+#logo-text{
+   font-size: 11px;
+   line-height: 16px;
+   margin-left: 1.5rem;
+   color: var(--Ble-F);
+}
+#headerBtn{
+   width: 8.5rem;
+   height: 2rem;
+   color: var(--White);
+   background-color: var(--Red);
+   border: none;
+   border-radius: 20rem;
+   font-size: 13px;
+   cursor: pointer;
+   user-select: none;
+   text-decoration: none;
+
+   display: flex;
+   padding-left: 15px;
+   padding-right: 4px;
+   justify-content: space-between;
+   align-items: center;
+
+   transition: all 300ms;
+   transition-delay: 100ms;
+}
+.circle-right-btn{
+   width: 1.6rem;
+   height: 1.6rem;
+   border-radius: 50rem;
+   background-color: var(--White);
+   overflow: hidden;
+}
+.c-inImages{
+   width: 1.5;
+   height: 3.2rem;
+   background-color: var(--White);
+   padding-top: 3.5px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   transition: all 300ms;
+   transition-delay: 70ms;
+}
+.cin_img{
+   width: 1.2rem;
+   user-select: none;
+   pointer-events: none;
+}
+#headerBtn:hover{
+   rotate: -4deg;
+}
+#headerBtn:hover .c-inImages{
+   transform: translateY(-1.9rem);
+}
+
+
+
+/*=======================*/
+/*=|  Footer Section   |=*/
+/*=======================*/
+.sep-cont{
+   max-width: 1440px;
+   margin: 0 auto;
+   height: 9.9rem;
+   position: relative;
+   background-image: url(/Pictures/book.svg);
+   background-position: bottom;
+   background-size: cover;
+   rotate: 180deg;
+   display: none;
+}
+footer{
+   max-width: 1440px;
+   margin: 0 auto;
+   margin-top: -10px;
+   height: 20rem;
+   background-color: var(--White);
+
+   padding-top: 1rem;
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.foo-logo{
+   width: 8rem;
+   margin-bottom: 2rem;
+   user-select: none;
+}
+.foo-text{
+   max-width: 30rem;
+   text-align: center;
+   color: var(--Text-Color);
+   font-size: 13px;
+   line-height: 23px;
+   margin-bottom: 2rem;
+   padding-inline: 1.5rem;
+}
+.contact-btn{
+   width: 8rem;
+   padding: 6px 0;
+   color: var(--White);
+   background-color: var(--Red);
+   border: none;
+   border-radius: 20rem;
+   cursor: pointer;
+}
+.contact-btn:hover{
+   opacity: .9;
+}
+
+@media screen and (max-width: 690px) {
+   .sep-cont{
+      max-width: 1440px;
+      margin: 0 auto;
+      height: 6rem;
+   }
+}
+
+
+@media screen and (max-width: 450px) {
+   header{
+      height: 3.7rem;
+   }
+   #headerBtn{
+      width: 8rem;
+      height: 1.9rem;
+      font-size: 12px;
+   
+      padding-left: 12px;
+      padding-right: 4px;
+   }
+   .circle-right-btn{
+      width: 1.5rem;
+      height: 1.5rem;
+   }
+   .c-inImages{
+      width: 1.5rem;
+      height: 3.2rem;
+      padding-top: 3.5px;
+   }
+   .cin_img{
+      width: 1.1rem;
+      user-select: none;
+      pointer-events: none;
+   }
+
+
+   #logoPicha{
+      border-right: none;
+   }
+   #logo-text{
+      display: none;
+   }
+   footer{
+      height: 18rem;
+      padding-top: 0rem;
+   }
+   .sep-cont{
+      height: 5rem;
+   }
+   .foo-logo{
+      width: 7rem;
+      margin-bottom: 1.7rem;
+      user-select: none;
+   }
+   .foo-text{
+      font-size: 11px;
+      line-height: 21px;
+      margin-bottom: 1.8rem;
+   }
+}
+
+
+
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+   width: 12px;
+   border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+   background: var(--Back-clr);
+}
+
+::-webkit-scrollbar-button {
+   display: none; /* Hide the scrollbar buttons (arrows) */
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: var(--SemBlue-drk);
+   border-radius: 10px;
+   border: 3px solid var(--Back-clr);
+}
+
+/* For Firefox */
+html {
+   scrollbar-width: thin;
+   scrollbar-color: var(--Drk-Red) var(--Back-clr);
+}
+
+/* Optional: Ensure the scrollbar styles are applied universally */
+* {
+   scrollbar-width: thin;
+   scrollbar-color: var(--SemBlue-drk) var(--Back-clr);
+}

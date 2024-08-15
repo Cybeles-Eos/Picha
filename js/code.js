@@ -1,0 +1,1 @@
+export const pass = 'cybeles10';

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+   --Poppins: "Poppins", sans-serif;
+
+   --Ble-F: #2294FF;
+   --Red: #FF7D7D;
+   --White: #FFF;
+   --Ble-BackGround: #CDE7FF;
+}
+*{
+   box-sizing: border-box;
+}
+.gallery-container{
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 1rem;
+   display: none;
+}
+/* 🎇 */
+.gallery-holder{
+   width: 100%;
+   background-color: var(--White);
+   border-radius: 10px;
+
+   display: flex;
+   justify-content: center;
+}
+.grid-images-container{
+   width: 920px;
+   margin: 1.2rem 1.4rem;
+   margin-bottom: 4rem !important;
+}
+.grid-images-container > p{
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: var(--Red);
+   text-decoration: underline;
+   text-underline-offset: 4px;
+}
+
+/*🎆*/
+
+.gridImagesHolder {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 10px;
+   margin-top: 2rem;
+}
+
+.img-box {
+   width: 100%;
+   padding-top: 100%; /* Creates a square by making the height equal to the width */
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.imgD {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* Ensures the image covers the entire box */
+   transform: translate(-50%, -50%);
+   border-radius: 5px;
+}
+
+.hover-dl{
+   position: absolute;
+   background-color: #000000da;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+}
+.img-box:hover .hover-dl{
+   inset: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+   .gridImagesHolder{
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .gridImagesHolder{
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (max-width: 420px) {
+   .grid-images-container{
+      margin: .8rem;
+   }
+
+   .grid-images-container > p{
+      font-size: 1rem;
+      text-underline-offset: 2px;
+      margin-bottom: 1rem;
+   }
+}
