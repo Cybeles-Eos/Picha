@@ -171,6 +171,6 @@ document.addEventListener('DOMContentLoaded', async () => {
        document.querySelector('.upload-image-cont').style.cursor = 'pointer';
        fileInput.disabled = false;
        saves.length = 0; // Clear the saves array after saving
-       document.querySelector('.choseImage-holder').src = './Pictures/BorderDashedImg2.png';
+       document.querySelector('.choseImage-holder').src = 'Pictures/BorderDashedImg2.png';
    }
 });
