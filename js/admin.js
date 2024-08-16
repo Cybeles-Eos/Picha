@@ -38,7 +38,7 @@ function createImageBox(img, imgId) {
     });
 
     let dlImg = document.createElement('img');
-    dlImg.src = '../Pictures/download-cloud-line.svg';
+    dlImg.src = 'Pictures/download-cloud-line.svg';
 
     let removeBtn = document.createElement('button');
     removeBtn.className = 'remove-btn';
