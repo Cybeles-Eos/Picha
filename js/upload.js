@@ -3,7 +3,7 @@
 
 export function openDatabase() {
    return new Promise((resolve, reject) => {
-       const request = indexedDB.open("ImageDB", 1);
+       const request = indexedDB.open("ImageDB", 2);
 
        request.onupgradeneeded = function(event) {
            const db = event.target.result;
@@ -59,7 +59,7 @@ export function saveImageToIndexedDB(db, image) {
 // Function to get images from IndexedDB
 export function getImagesFromIndexedDB() {
    return new Promise((resolve, reject) => {
-       const request = indexedDB.open("ImageDB", 1);
+       const request = indexedDB.open("ImageDB", 2);
 
        request.onsuccess = function(event) {
            const db = event.target.result;
