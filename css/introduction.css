@@ -249,7 +249,7 @@
    height: 27rem;
    border-radius: 10px;
    margin-top: 1rem;
-   background-image: url(Pictures/WAVES.png);
+   background-image: url(../Pictures/WAVES.png);
    background-position: bottom;
    background-size: cover;
    display: flex;
